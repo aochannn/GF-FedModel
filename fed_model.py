@@ -67,7 +67,7 @@ def readYear(path):
         earnings_yield.append(100.0/(float(cell2.value)))
     name = "Fed Model by Year"
 
-readYear(path)
+readWeek(path)
 x_data = [i for i in range(1,len(earnings_yield)+1)]
 
 plt.figure()

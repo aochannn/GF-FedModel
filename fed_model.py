@@ -83,13 +83,7 @@ def plotData(x_data, nominal_yield, earnings_yield, name):
 
 
 readData(path)
-#x_data = [i for i in range(1,len(earnings_yield)+1)]
-year_labels = []
-for date in date_column:
-    year = datetime.strptime(date, '%Y-%m-%d').year
-    year_labels.append(year)
-    
-plotData(year_labels, nominal_yield, earnings_yield, name)
+plotData(date_column, nominal_yield, earnings_yield, name)
 
 
 # print(len(nominal_yield))
